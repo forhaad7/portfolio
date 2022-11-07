@@ -1,9 +1,9 @@
 *{
 	padding: 0;
 	margin: 0;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	box-sizing: border-box;
-}
+	}
 .hero{
 	height: 100vh;
 	width: 100%;
@@ -15,19 +15,21 @@ nav{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding-top: 45px;
+	padding-top: 30px;
 	padding-left: 8%;
 	padding-right: 8%;
 }
-.logo{
-	color: white;
-	font-size: 35px;
-	letter-spacing: 1px;
-	cursor: pointer;
+
+
+.logo a img{
+	height: 50px;
+
 }
-span{
-	color: green;
+.logo:hover {
+	transform: scale(1.1);
+	transition: .2s;
 }
+
 nav ul li{
 	list-style-type: none;
 	display: inline-block;
@@ -44,9 +46,65 @@ nav ul li a:hover{
 	transition: .4s;
 }
 
-.social{
-	display: inline-block;
+.social0 {
+	position: fixed;
+	right: 0;
+	top: 40%;
+	z-index: 1000;
+}		
+.social0 a {
+	width: 35px;
+	height: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #007bb5;
+	border-radius: 50%;
+	margin: 10px 5px;
+	color: white;
 	text-decoration: none;
+	font-size: 16px;
+	box-shadow: 0 7px 7px rgba(0, 0, 0, 0.3);
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	font-size: 13px;
+	background-color: #fff;
+	color: black;
+	text-align: center;
+	padding: 5px 7px;
+	border-radius: 6px;
+	right: 40px;
+	box-shadow: 0 7px 7px rgba(0, 0, 0, 0.2);
+
+	/* Position the tooltip text - see examples below! */
+	position: absolute;
+	z-index: 999;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+.social0 a:nth-child(2) {
+	background: #1769ff;
+}
+
+.social0 a:nth-child(3){
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.social0 a:nth-child(4) {
+	background: #55ACEE;
+}
+
+.social0 a:nth-child(5) {
+	background: #3B5998;
+}
+.social0 a:hover {
+	transform: scale(1.1);
+	transition: .1s;
 }
 
 .content{
@@ -57,18 +115,18 @@ nav ul li a:hover{
 }
 h1{
 	color: white;
-	margin: 20px 0px 20px;
-	font-size: 75px;
+	margin: 10px 0px 10px;
+	font-size: 60px;
 }
 h3{
 	color: white;
-	font-size: 25px;
+	font-size: 20px;
 	margin-bottom: 50px;
 }
 h4{
 	color: #fcfc;
 	letter-spacing: 2px;
-	font-size: 20px;
+	font-size: 15px;
 }
 .newslatter form{
 	width: 380px;
@@ -96,6 +154,8 @@ h4{
 	top: 6px;
 	right: 6px; 
 }
+
+
 
 .about{
 	width: 100%;
@@ -152,6 +212,8 @@ button:hover{
 	border: 2px solid green;
 	cursor: pointer;
 }
+
+
 
 .service{
 	background: #101010;
@@ -246,6 +308,9 @@ h5{
 	border: 2px solid green;
 	cursor: pointer;
 }
+
+
+
 footer{
 	position: relative;
 	width: 100%;
@@ -269,6 +334,8 @@ footer p:nth-child(2){
 	text-align: center;
 	line-height: 26px;
 }
+
+
 .social{
 	display: flex;
 }
