@@ -3,14 +3,23 @@
 	margin: 0;
 	font-family: 'Open Sans', sans-serif;
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 	}
 .hero{
 	height: 100vh;
 	width: 100%;
-	background-image: url(../img/background.jpg);
+	background-color: rgb(1, 39, 7);
 	background-size: cover;
 	background-position: center;
+	position: relative;
 }
+
+.myimgage{
+	position: absolute;
+	right: 0;
+	bottom: -5px;
+}
+
 nav{
 	display: flex;
 	align-items: center;
@@ -52,8 +61,8 @@ nav ul li a:hover{
 .social0 {
 	position: fixed;
 	right: 0;
-	top: 40%;
-	z-index: 1000;
+	top: 30%;
+	z-index: 1100;
 }		
 .social0 a {
 	width: 35px;
@@ -121,43 +130,52 @@ h1{
 	margin: 10px 0px 10px;
 	font-size: 60px;
 }
-h3{
-	color: white;
-	font-size: 20px;
-	margin-bottom: 50px;
-}
+
 h4{
 	color: #fcfc;
 	letter-spacing: 2px;
 	font-size: 15px;
 }
-.newslatter form{
-	width: 380px;
-	max-width: 100%;
-	position: relative;
-}
-.newslatter form input:first-child{
-	display: inline-block;
-	width: 100%;
-	padding: 14px 130px 14px 15px;
-	border: 2px solid green;
-	outline: none;
-	border-radius: 30px;
-}
-.newslatter form input:last-child{
-	position: absolute;
-	display: inline-block;
-	outline: none;
-	border: none;
-	padding: 10px 30px;
-	border-radius: 30px;
-	background-color: green;
-	color: white;
-	box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
-	top: 6px;
-	right: 6px; 
+
+
+.textefect {
+	overflow: hidden;
 }
 
+.textefect .text {
+	position: relative;
+	color: green;
+	font-size: 20px;
+	font-weight: 800;
+}
+
+.textefect .text.first-text {
+	color: #FFF;
+}
+
+.text.sec-text:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgb(1, 39, 7);
+	border-left: 2px solid #4070F4;
+	animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+
+	40%,
+	60% {
+		left: calc(100% + 4px);
+	}
+
+	100% {
+		left: 0%;
+	}
+}
 
 
 .about{
@@ -220,7 +238,7 @@ button:hover{
 
 
 .service{
-	background: #101010;
+	background: rgb(1, 39, 7);
 	width: 100%;
 	padding: 100px 0px;
 }
@@ -241,7 +259,7 @@ button:hover{
 	height: 365px;
 	width: 335px;
 	padding: 20px 35px;
-	background: #191919;
+	background: rgb(1, 32, 6);
 	border-radius: 20px;
 	margin: 15px;
 	position: relative;
@@ -262,7 +280,7 @@ h5{
 	margin-bottom: 15px;
 }
 .pra p{
-	color: #fcfc;
+	color: rgb(214, 247, 219);
 	font-size: 16px;
 	line-height: 27px;
 	margin-bottom: 25px;
@@ -300,7 +318,7 @@ h5{
 	display: flex;
   	align-items: center;
   	justify-content: space-between;
-	margin: 10px auto 40px;
+	margin: 10px auto 120px;
 }
 
 .contact .left-side{
@@ -321,7 +339,7 @@ h5{
 	right: -15px;
 	top: 50%;
 	transform: translateY(-50%);
-	background: grey;
+	background: rgb(154, 199, 162);
   }
   .contact .left-side .details{
 	margin: 14px;
@@ -420,12 +438,4 @@ h5{
    }
 }
 
-   /*----- footer ---------*/
-footer .end{
-	color: white;
-	background: green;
-	bottom: 35px;
-	font-size: 14px; 
-	text-align: center;
-	line-height: 30px;
-}
+   
