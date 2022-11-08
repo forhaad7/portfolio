@@ -20,7 +20,10 @@ nav{
 	padding-right: 8%;
 }
 
-
+span{
+	color: green;
+	font-weight: 600;
+}
 .logo a img{
 	height: 50px;
 
@@ -211,6 +214,7 @@ button:hover{
 	background-color: transparent;
 	border: 2px solid green;
 	cursor: pointer;
+	color: green;
 }
 
 
