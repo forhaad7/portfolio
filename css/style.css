@@ -240,13 +240,13 @@ button:hover{
 .service{
 	background: rgb(1, 39, 7);
 	width: 100%;
-	padding: 100px 0px;
+	padding: 50px 0px;
 }
 .title h2{
 	color: white;
 	font-size: 75px;
 	width: 1130px;
-	margin: 30px auto;
+	margin: 25px auto;
 	text-align: center;
 }
 .box{
@@ -256,12 +256,12 @@ button:hover{
 	min-height: 400px;
 }
 .card{
-	height: 365px;
+	height: 390px;
 	width: 335px;
 	padding: 20px 35px;
 	background: rgb(1, 32, 6);
 	border-radius: 20px;
-	margin: 15px;
+	margin: 10px;
 	position: relative;
 	overflow: hidden;
 	text-align: center;
@@ -270,7 +270,7 @@ button:hover{
 	font-size: 50px;
 	display: block;
 	text-align: center;
-	margin: 25px 0px;
+	margin: 20px 0px;
 	color: green;
 
 }
@@ -299,6 +299,10 @@ h5{
 	background-color: transparent;
 	border: 2px solid green;
 	cursor: pointer;
+}
+
+.card:hover{
+	box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .headline1{
