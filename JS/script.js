@@ -1,4 +1,5 @@
 
+//Mutli typing effect start -----------------------------------------
 
 	const text = document.querySelector(".sec-text");
 
@@ -15,12 +16,12 @@
 	}
 	textLoad();
 	setInterval(textLoad, 12000);
+//Mutli typing effect end
 
 
 
 
-	
-
+//Up Button start---------------------------------------------------------------
 
 	// Get the button:
 		let mybutton = document.getElementById("myBtn");
@@ -41,3 +42,5 @@
 			document.body.scrollTop = 0; // For Safari
 			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 		}
+
+//Up Button end

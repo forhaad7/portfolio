@@ -5,6 +5,8 @@
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 	}
+
+/* Hero start ---------------------------------------------------------------  */
 .hero{
 	height: 100vh;
 	width: 100%;
@@ -177,7 +179,7 @@ h4{
 	}
 }
 
-
+/* About start ---------------------------------------------------------------  */
 .about{
 	width: 100%;
 	padding: 100px 0px;
@@ -236,7 +238,7 @@ button:hover{
 }
 
 
-
+/* service start ---------------------------------------------------------------  */
 .service{
 	background: rgb(1, 39, 7);
 	width: 100%;
@@ -304,6 +306,9 @@ h5{
 .card:hover{
 	box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.5);
 }
+
+
+/* contact start ---------------------------------------------------------------  */
 
 .headline1{
 	text-align: center;
@@ -418,28 +423,33 @@ h5{
 	background: green;
   }
   
+
+  /* responsive start ----------------------------------------------------------------------  */
+
   @media (max-width: 950px) {
 
- .right-side{
-	 width: 75%;
-	 margin-left: 55px;
+	.right-side{
+		width: 75%;
+		margin-left: 55px;
+	}
   }
-  }
+
+
   @media (max-width: 820px) {
-.left-side{
-	 width: 100%;
-	 flex-direction: row;
-	 margin-top: 40px;
-	 justify-content: center;
-	 flex-wrap: wrap;
-   }
- .left-side::before{
-	 display: none;
-   }
-.right-side{
-	 width: 100%;
-	 margin-left: 0;
-   }
+	.left-side{
+		width: 100%;
+		flex-direction: row;
+		margin-top: 40px;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	.left-side::before{
+		display: none;
+	}
+	.right-side{
+		width: 100%;
+		margin-left: 0;
+	}
 }
 
    
