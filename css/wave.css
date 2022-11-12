@@ -299,10 +299,10 @@ footer .wave#wave5{
     /* Add a mouse pointer on hover */
     padding: 2px;
     /* Some padding */
-    border-radius: 10px;
+    border-radius: 5px;
     /* Rounded corners */
     box-shadow: 0 7px 7px rgba(0, 0, 0, 0.2);
-    opacity: .5;
+    opacity: .8;
   
 }
 
@@ -318,4 +318,17 @@ footer .wave#wave5{
     margin: 5px auto;
     color: black;
     
+}
+/* schrool up smoothness  */
+
+.reveal {
+    position: relative;
+    transform: translateY(70px);
+    opacity: 0.1;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
 }
