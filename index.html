@@ -24,18 +24,19 @@
 <body>
 <!----hero Section start---->
 
-	<div class="hero">
+	<div id="home" class="hero">
 		<nav>
 			<div class="logo">
-				<a href="#">
+				<a href="#home">
 					<img src="img/logo.png" alt="Logo">
 				</a>
 			</div>
 			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About Me</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Skills</a></li>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#aboutme">About Me</a></li>
+				<li><a href="#Services">Services</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#contactus">Contact</a></li>
 			</ul>
 		</nav>
 
@@ -58,28 +59,25 @@
 		<div class="content">
 			<h4>Hello, my name is</h4>
 			<h1>Forhad Hossain</h1>
-			<div class="textefect">
-				<span class="text first-text">I'am expert on</span>
-				<span class="text sec-text">Web Design</span>
-			</div>
+			<h3>I'm expert on <span> Web Design, Graphics Design & Data Entry </span></h3>
 		</div>
 	</div>
 
 	<!----About section start---->
-	<section class="about">
-		<div class="main">
+	<section  class="about">
+		<div id="aboutme" class="main">
 			<img src="img/main-img.png">
 			<div class="about-text">
 				<h2>About Me</h2>
-				<h5>Developer <span>& Designer</span></h5>
-				<p>I am a front-end web developer. I can provide clean code and pixel perfect design. I also make the website more & more interactive with web animations.I can provide clean code and pixel perfect design. I also make the website more & more interactive with web animations.A responsive design makes your website accessible to all users, regardless of their device.</p>
-				<button type="button">Let's Talk</button>
+				<h5><span>Web Design, Graphics Design</span> & Data Entry</h5>
+				<p>I am a front-end web developer. I can provide clean code and pixel perfect design. I also make the website more & more interactive with web animations.A responsive design makes your website accessible to all users, regardless of their device. <br> I also can design many Graphics Design like flyer, Business Card, Brucure, Social Media Post, Calander, Post Card etc. Data Entry is my another skill. </p>
+				<a href="#contactus"><button type="button">Let's Talk</button></a>
 			</div>
 		</div>
 	</section>
 
 	<!-----service section start----------->
-	<div class="service">
+	<div id="Services" class="service">
 		<div class="title">
 			<h2>Services</h2>
 		</div>
@@ -124,20 +122,57 @@
 	</div>
 
 	<!----Slill section start---->
-	<section class="about">
-		<div class="main">
-			<img src="img/main-img.png">
-			<div class="about-text">
+	<div id="skills" class="skillmy">
+		<div class="skill_main">
+			<div class="Skill-text">
 				<h2>Skills</h2>
-				<h5>Developer <span>& Designer</span></h5>
-				<p>I am a front-end web developer. I can provide clean code and pixel perfect design. I also make the
-					website more & more interactive with web animations.I can provide clean code and pixel perfect design. I
-					also make the website more & more interactive with web animations.A responsive design makes your website
-					accessible to all users, regardless of their device.</p>
-				<button type="button">Let's Talk</button>
+				<div class="skill-bars">
+					<div class="bar">
+						<div class="info">
+							<span>HTML</span>
+						</div>
+						<div class="progress-line html">
+							<span></span>
+						</div>
+					</div>
+					<div class="bar">
+						<div class="info">
+							<span>CSS</span>
+						</div>
+						<div class="progress-line css">
+							<span></span>
+						</div>
+					</div>
+					<div class="bar">
+						<div class="info">
+							<span>JS</span>
+						</div>
+						<div class="progress-line JS">
+							<span></span>
+						</div>
+					</div>
+					<div class="bar">
+						<div class="info">
+							<span>Adobe Photoshop</span>
+						</div>
+						<div class="progress-line Photoshop">
+							<span></span>
+						</div>
+					</div>
+					<div class="bar">
+						<div class="info">
+							<span>Adobe Illustrator</span>
+						</div>
+						<div class="progress-line Illustrator">
+							<span></span>
+						</div>
+					</div>
+				</div>
 			</div>
+
+			<img src="img/main-img.png">
 		</div>
-	</section>
+	</div>
 		 
 	<!------footer start--------->
 	

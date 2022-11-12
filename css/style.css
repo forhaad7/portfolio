@@ -127,6 +127,10 @@ nav ul li a:hover{
 	left:8%;
 	transform: translateY(-50%);
 }
+
+.content span{
+	font-weight: bold;
+}
 h1{
 	color: white;
 	margin: 10px 0px 10px;
@@ -138,51 +142,18 @@ h4{
 	letter-spacing: 2px;
 	font-size: 15px;
 }
-
-
-.textefect {
-	overflow: hidden;
-}
-
-.textefect .text {
-	position: relative;
-	color: green;
+h3 {
 	font-size: 20px;
-	font-weight: 800;
+	color: #f0f0f0;
+	font-weight: 400;
 }
 
-.textefect .text.first-text {
-	color: #FFF;
-}
 
-.text.sec-text:before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	background-color: rgb(1, 39, 7);
-	border-left: 2px solid #4070F4;
-	animation: animate 4s steps(12) infinite;
-}
-
-@keyframes animate {
-
-	40%,
-	60% {
-		left: calc(100% + 4px);
-	}
-
-	100% {
-		left: 0%;
-	}
-}
 
 /* About start ---------------------------------------------------------------  */
 .about{
 	width: 100%;
-	padding: 100px 0px;
+	padding: 50px 0px;
 	background-color: whitesmoke;
 }
 .about img{
@@ -204,7 +175,6 @@ h4{
 	color: green;
 	font-size: 75px;
 	text-transform: capitalize;
-	margin-bottom: 20px;
 }
 .about-text h5{
 	color: black;
@@ -243,7 +213,6 @@ button:hover{
 	background: rgb(1, 39, 7);
 	width: 100%;
 	padding: 50px 0px;
-	margin-bottom: 50px;
 }
 .title h2{
 	color: white;
@@ -307,6 +276,176 @@ h5{
 .card:hover{
 	box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.5);
 }
+
+/* Skill start ----------------------------------------------------------------------  */
+.skillmy {
+	width: 100%;
+	padding: 40px 0px;
+	background-color: #FFF;
+}
+
+.skillmy img {
+	height: auto;
+	width: 40%;
+}
+
+.Skill-text {
+	width: 60%;
+}
+
+.skill_main {
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.Skill-text h2 {
+	color: green;
+	font-size: 75px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+
+.skill-bars {
+	padding: 25px 30px;
+	width: 600px;
+	background: #fff;
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+}
+
+.skill-bars .bar {
+	margin: 20px 0;
+}
+
+.skill-bars .bar:first-child {
+	margin-top: 0px;
+}
+
+.skill-bars .bar .info {
+	margin-bottom: 5px;
+}
+
+.skill-bars .bar .info span {
+	font-weight: 500;
+	font-size: 17px;
+	opacity: 0;
+	animation: showText 0.5s 1s linear forwards;
+}
+
+@keyframes showText {
+	100% {
+		opacity: 1;
+	}
+}
+
+.skill-bars .bar .progress-line {
+	height: 15px;
+	width: 100%;
+	background: #f0f0f0;
+	position: relative;
+	transform: scaleX(0);
+	transform-origin: left;
+	border-radius: 10px;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05),
+		0 1px rgba(255, 255, 255, 0.8);
+	animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+	100% {
+		transform: scaleX(1);
+	}
+}
+
+.bar .progress-line span {
+	height: 100%;
+	position: absolute;
+	border-radius: 10px;
+	transform: scaleX(0);
+	transform-origin: left;
+	background: #109308;
+	animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line.html span {
+	width: 90%;
+}
+
+.bar .progress-line.css span {
+	width: 65%;
+}
+
+.bar .progress-line.JS span {
+	width: 50%;
+}
+
+.bar .progress-line.Photoshop span {
+	width: 90%;
+}
+
+.bar .progress-line.Illustrator span {
+	width: 75%;
+}
+
+.progress-line span::before {
+	position: absolute;
+	content: "";
+	top: -10px;
+	right: 0;
+	height: 0;
+	width: 0;
+	border: 7px solid transparent;
+	border-bottom-width: 0px;
+	border-right-width: 0px;
+	border-top-color: #000;
+	opacity: 0;
+	animation: showText2 0.5s 1.5s linear forwards;
+}
+
+.progress-line span::after {
+	position: absolute;
+	top: -28px;
+	right: 0;
+	font-weight: 500;
+	background: #054e01;
+	color: #fff;
+	padding: 1px 8px;
+	font-size: 12px;
+	border-radius: 3px;
+	opacity: 0;
+	animation: showText2 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText2 {
+	100% {
+		opacity: 1;
+	}
+}
+
+.progress-line.html span::after {
+	content: "90%";
+}
+
+.progress-line.css span::after {
+	content: "65%";
+}
+
+.progress-line.JS span::after {
+	content: "50%";
+}
+
+.progress-line.Photoshop span::after {
+	content: "90%";
+}
+
+.progress-line.Illustrator span::after {
+	content: "75%";
+}
+
 
 
   /* responsive start ----------------------------------------------------------------------  */
