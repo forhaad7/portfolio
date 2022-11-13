@@ -218,6 +218,7 @@ button:hover{
 	border: 2px solid green;
 	cursor: pointer;
 	color: green;
+	transition: 2s;
 }
 
 
@@ -241,10 +242,10 @@ button:hover{
 	min-height: 400px;
 }
 .card{
-	height: 390px;
+	height: 100%;
 	width: 335px;
 	padding: 20px 35px;
-	background: rgb(1, 32, 6);
+	background: rgb(3, 71, 14);
 	border-radius: 20px;
 	margin: 10px;
 	position: relative;
@@ -256,7 +257,7 @@ button:hover{
 	display: block;
 	text-align: center;
 	margin: 20px 0px;
-	color: green;
+	color: rgb(81, 235, 81);
 
 }
 h5{
@@ -270,40 +271,45 @@ h5{
 	line-height: 27px;
 	margin-bottom: 25px;
 }
+
 .card .button{
-	background-color: green;
+	background-color: rgb(5, 90, 5);
 	color: white;
 	text-decoration: none;
 	border: 2px solid transparent;
 	font-weight: bold;
 	padding: 9px 22px;
 	border-radius: 30px;
-	transition: .4s; 
 }
+
 .card .button:hover{
 	background-color: transparent;
-	border: 2px solid green;
+	border: 2px solid #fff;
 	cursor: pointer;
+	transition: 1s;
 }
 
 .card:hover{
-	box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.5);
+	background-color: green;
+	transition: 2s;
+	transform: translateY(-15px);
 }
+
 
 /* Skill start ----------------------------------------------------------------------  */
 .skillmy {
 	width: 100%;
-	padding: 40px 0px;
+	margin: 70px 0;
 	background-color: #FFF;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
-.skillmy img {
-	height: auto;
-	width: 40%;
-}
 
 .Skill-text {
-	width: 60%;
+	width: 50%;
+	margin: 0 5px;
 }
 
 .skill_main {
@@ -319,14 +325,14 @@ h5{
 	color: green;
 	font-size: 75px;
 	text-transform: capitalize;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 
 .skill-bars {
 	padding: 25px 30px;
-	width: 600px;
+	width: 100%;
 	background: #fff;
-	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);	
 	border-radius: 10px;
 }
 
@@ -404,6 +410,14 @@ h5{
 	width: 75%;
 }
 
+.bar .progress-line.Office span {
+	width: 95%;
+}
+
+.bar .progress-line.Excel span {
+	width: 60%;
+}
+
 .progress-line span::before {
 	position: absolute;
 	content: "";
@@ -459,7 +473,37 @@ h5{
 	content: "75%";
 }
 
+.progress-line.Office span::after {
+	content: "95%";
+}
 
+.progress-line.Excel span::after {
+	content: "60%";
+}
+
+/* image --------------------*/
+.skillmy figure {
+	max-height: 550px;
+	width: 40%;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	margin-top: 50px;
+	overflow: hidden;
+}
+
+.skillmy figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+
+}
+
+.skillmy figure img:hover {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
 
   /* responsive start ----------------------------------------------------------------------  */
 

@@ -111,9 +111,10 @@ footer .contact {
 .contact .right-side .button input[type="button"] {
     color: green;
     font-size: 18px;
+    font-weight: 600;
     outline: none;
     border: none;
-    padding: 0px 20px;
+    padding: 5px 20px;
     border-radius: 6px;
     background: #fff;
     cursor: pointer;
@@ -122,6 +123,7 @@ footer .contact {
 
 .contact .button input[type="button"]:hover {
     background: greenyellow;
+    transition: 2s;
 }
 
 .contact .manudown {
@@ -317,6 +319,7 @@ footer .wave#wave5{
     font-size: 14px;
     margin: 5px auto;
     color: black;
+    font-weight: 400;
     
 }
 /* schrool up smoothness  */
