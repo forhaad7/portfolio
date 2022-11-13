@@ -1,26 +1,45 @@
 
+//babul effect start -----------------------------------------
 
+var bubbleLifeTime = 20;
+var noOfBubbles = 120;
 
+var wrapper = document.querySelector('.wrapper');
+var bubbles = [];
 
+init();
 
-//Mutli typing effect start -----------------------------------------
-
-	const text = document.querySelector(".sec-text");
-
-	const textLoad = () => {
-		setTimeout(() => {
-			text.textContent = "Web Design";
-		}, 0);
-		setTimeout(() => {
-			text.textContent = "Graphics Design";
-		}, 4000);
-		setTimeout(() => {
-			text.textContent = "Data Entry";
-		}, 8000); //1s = 1000 milliseconds
+function init() {
+	var bubble;
+	for (var i = 0; i < noOfBubbles; i++) {
+		bubble = createBubble();
+		wrapper.appendChild(bubble);
 	}
-	textLoad();
-	setInterval(textLoad, 12000);
-//Mutli typing effect end
+}
+
+function createBubble() {
+	var circleContainer = document.createElement('div');
+	circleContainer.classList.add('circle_container');
+	circleContainer.style.transform = "rotate(" + Math.floor(Math.random() * 360) + "deg)";
+
+	var circle = createCircle();
+	circleContainer.appendChild(circle);
+
+	return circleContainer;
+}
+
+function createCircle() {
+	var circle = document.createElement('div');
+	circle.classList.add('circle');
+	circle.style.animationDelay = (Math.random() * bubbleLifeTime) + 's';
+
+	var side = (5 + Math.floor(Math.random() * 5)) + 'px';
+	circle.style.width = side;
+	circle.style.height = side;
+
+	return circle;
+}
+//babul effect end--------------------------------------------------
 
 
 
