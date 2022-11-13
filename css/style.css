@@ -1,3 +1,7 @@
+:root {
+	--color: #4973ff;
+}
+
 *{
 	padding: 0;
 	margin: 0;
@@ -107,6 +111,19 @@
 	right: 0;
 	bottom: -5px;
 	z-index: 2;
+	animation: sideinn 1s ease-in-out;
+}
+
+@keyframes sideinn {
+	0% {
+		opacity: 0;
+		transform: translateX(150px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
 
 nav{
@@ -228,20 +245,24 @@ nav ul li a:hover{
 	transform: translateY(-50%);
 	z-index: 5;
 }
+.content_detail{
+	animation: fadeinup 1s ease-in-out;
+}
 
 .content span{
 	font-weight: bold;
 }
-h1{
-	color: white;
-	margin: 10px 0px 10px;
-	font-size: 60px;
-}
+
 
 h4{
 	color: #fcfc;
 	letter-spacing: 2px;
 	font-size: 15px;
+}
+h1 {
+	color: white;
+	margin: 10px 0px 10px;
+	font-size: 60px;
 }
 h3 {
 	font-size: 20px;
@@ -249,7 +270,18 @@ h3 {
 	font-weight: 400;
 	margin-bottom: 30px;
 }
+ /* content part animation  */
+@keyframes fadeinup{
+	0%{
+		opacity: 0;
+		transform: translateY(150px);
+	}
 
+	100%{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
 
 /* About start ---------------------------------------------------------------  */
 .about{
