@@ -13,14 +13,14 @@
 
 /* schrool up smoothness  */
 	
-	.reveal {
+	.reveal00000000000 {
 			position: relative;
 			transform: translateY(70px);
 			opacity: 0.1;
 			transition: 1s all ease;
 		}
 	
-	.reveal.active {
+	.reveal0000000000000 .active {
 			transform: translateY(0);
 			opacity: 1;
 		}

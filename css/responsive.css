@@ -3,7 +3,6 @@
 @media screen and (max-width: 600px) {
    
     .reveal {
-        position: relative;
         transform: none;
         opacity: 1;
         transition: none;
