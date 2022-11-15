@@ -1,12 +1,7 @@
  /* responsive start ----------------------------------------------------------------------  */
 
 @media screen and (max-width: 600px) {
-   
-    .reveal {
-        transform: none;
-        opacity: 1;
-        transition: none;
-    }
+
  /* ------------ hero section ----------*/
  
  

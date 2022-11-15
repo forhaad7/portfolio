@@ -11,19 +11,8 @@
 	scroll-behavior: smooth;
 	}
 
-/* schrool up smoothness  */
+
 	
-	.reveal00000000000 {
-			position: relative;
-			transform: translateY(70px);
-			opacity: 0.1;
-			transition: 1s all ease;
-		}
-	
-	.reveal0000000000000 .active {
-			transform: translateY(0);
-			opacity: 1;
-		}
 
 /* ----- babul efect ------------------- */
 .wrapper {
