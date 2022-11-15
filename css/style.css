@@ -27,7 +27,7 @@
 
   .circle_container {
       position: absolute;
-      top: 40%;
+      top: 50%;
       left: 50%;
       height: 10px;
       transform-origin: left center;
@@ -662,7 +662,7 @@ footer {
 /* contact start ---------------------------------------------------------------  */
 
 footer #contactus {
-	margin-bottom: -360px;
+	position: absolute;;
 }
 
 footer .contact {
@@ -816,9 +816,7 @@ footer .contact {
 }
 
 .manudown ul li a:hover {
-	color: greenyellow;
-	transition: .4s;
-	font-weight: bold;
+	color: #fff;
 }
 
 /* wave start ---------------------------------------------------------------  */
@@ -935,6 +933,7 @@ footer .wave#wave5 {
 	font-size: 14px;
 	color: black;
 	font-weight: 400;
+	margin: 0;
 }
 
 /* Top up button ---------------------------------------------------------------  */
