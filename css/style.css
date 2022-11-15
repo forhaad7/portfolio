@@ -393,7 +393,6 @@ button:hover{
 .title h2{
 	color: white;
 	font-size: 75px;
-	width: 1130px;
 	margin: 25px auto;
 	text-align: center;
 }
@@ -476,7 +475,6 @@ h5{
 }
 
 .skill_main {
-	width: 1130px;
 	max-width: 95%;
 	margin: 0 auto;
 	display: flex;
