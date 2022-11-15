@@ -15,14 +15,12 @@
 	
 	.reveal {
 			position: relative;
-			--webkit-transform: translateY(70px);
 			transform: translateY(70px);
 			opacity: 0.1;
 			transition: 1s all ease;
 		}
 	
 	.reveal.active {
-			--webkit-transform: translateY(0);
 			transform: translateY(0);
 			opacity: 1;
 		}
@@ -114,7 +112,6 @@
 	z-index: 1;
 	animation: sideinn 2s ease-in-out;
 	height: 85vh;
-
 }
 
 .myimgage img {
@@ -321,24 +318,20 @@ h1 {
 	padding: 50px 0px;
 	background-color: whitesmoke;
 }
-.about img{
+.about .photo img{
 	height: auto;
-	width: 430px;
-	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 }
 
 .about img:hover {
-	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
 	filter: drop-shadow(1px 1px 2px rgb(131, 206, 131));
 	transition: 1s;
 }
 .about-text{
-	width: 550px;
+	width: 95%;
 }
 .main{
-	width: 1130px;
 	max-width: 95%;
 	margin: 0 auto;
 	display: flex;
@@ -420,7 +413,6 @@ button:hover{
 	text-align: center;
 	margin: 20px 0px;
 	color: rgb(81, 235, 81);
-
 }
 
 h5{
