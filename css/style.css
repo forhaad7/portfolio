@@ -312,7 +312,7 @@ h1 {
 	width: 45%;
 }
 .about .photo img{
-	height: auto;
+	width: 100%;
 	filter: grayscale(100%);
 }
 
