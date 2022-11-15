@@ -447,24 +447,20 @@ h5{
 /* Skill start ----------------------------------------------------------------------  */
 .skillmy {
 	width: 100%;
-	margin: 70px 0;
+	margin: 40px 0;
 	background-color: #FFF;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 }
 
 .Skill-text {
-	width: 50%;
-	margin: 0 5px;
+	width: 60%;
+	margin-right: 20px;
 }
 
 .skill_main {
-	max-width: 95%;
+	width: 80%;
 	margin: 0 auto;
 	display: flex;
-	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
 }
 
 .Skill-text h2 {
@@ -635,8 +631,7 @@ h5{
 /* image --------------------*/
 .skillmy figure {
 	width: 45%;
-	margin-top: 90px;
-	padding: 0;
+	margin: 90px 0 0 20px;
 	background: #fff;
 	overflow: hidden;
 }
