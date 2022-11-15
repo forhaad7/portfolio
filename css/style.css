@@ -27,7 +27,7 @@
 
   .circle_container {
       position: absolute;
-      top: 50%;
+      top: 40%;
       left: 50%;
       height: 10px;
       transform-origin: left center;
@@ -308,6 +308,9 @@ h1 {
 	padding: 50px 0px;
 	background-color: whitesmoke;
 }
+.about .photo{
+	width: 45%;
+}
 .about .photo img{
 	height: auto;
 	filter: grayscale(100%);
@@ -319,7 +322,7 @@ h1 {
 	transition: 1s;
 }
 .about-text{
-	width: 95%;
+	width: 45%;
 }
 .main{
 	max-width: 95%;
