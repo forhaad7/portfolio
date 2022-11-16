@@ -1,4 +1,12 @@
 
+//preload effect code
+var preloader = document.getElementById('loading');
+
+		function myFounction(){
+			preloader.style.display = 'none'; 
+		}
+
+
 //babul effect start -----------------------------------------
 
 var bubbleLifeTime = 20;
