@@ -189,6 +189,7 @@ h5{
     
     .skillmy .Skill-text {
         width: 95%;
+        margin: 0;
     }
     
     .skillmy .Skill-text h2 {
@@ -203,6 +204,7 @@ h5{
     
     .skill_main {
         width: 100%;
+         align-items: center;
     }
     
     .skill-bars {
@@ -212,7 +214,9 @@ h5{
     
     .skillmy .skill_main figure {
         width: 95%;
-        margin-top: 20px;
+        margin: 0;
+        margin-top: 20px
+
     }
    
     
@@ -292,14 +296,15 @@ h5{
     margin: 0;
     background-color: rgba(0, 0, 0, .2);
     border-radius: 0 0 20px 20px;
+    align-items: center;
 }
 .manudown ul li {
     display: inline-block;
-	padding: 10px 0;
-    padding-left: 35px;
+	padding: 10px 15px;
 }   
 .manudown ul li a {
     font-weight: 600;
+    font-size: 14px;
 }
 .manudown::after {
 	display: none;

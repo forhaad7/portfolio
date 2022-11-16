@@ -28,9 +28,9 @@
 #loading figure div:nth-child(1){transform:rotate(0deg)}
 #loading figure div:nth-child(1):after{animation-delay:-0.5s;}
 #loading figure div:nth-child(2){transform:rotate(45deg)}
-#loadingfigure div:nth-child(2):after{animation-delay:-1s;}
+#loading figure div:nth-child(2):after{animation-delay:-1s;}
 #loading figure div:nth-child(3){transform:rotate(90deg)}
-#loadingfigure div:nth-child(3):after{animation-delay:-1.5s;}
+#loading figure div:nth-child(3):after{animation-delay:-1.5s;}
 #loading figure div:nth-child(4){transform:rotate(135deg)}
 #loading figure div:nth-child(4):after{animation-delay:-2s;}
 #loading figure div:nth-child(5){transform:rotate(180deg)}
