@@ -20,7 +20,10 @@
  	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
-<body>
+<body onload="myFounction()">
+<!----Preloader Section start---->
+   <div id="loading"></div>
+
 <!----hero Section start---->
 
 	<div id="home" class="hero">
@@ -56,7 +59,7 @@
 		<div class="myimgage">
 					<img src="img/background1.png" alt="">
 		</div>
-
+		
 		<div class="content">
 			<div class="content_detail">
 				<h4>Hello, my name is</h4>
@@ -287,5 +290,13 @@
 	<!----Link JS file------>
 	<script src="/JS/script.js"></script>
 	<script src="JS/first.js"></script>
+
+	<script>
+		var preloader = document.getElementById('loading');
+
+		function myFounction(){
+			preloader.style.display = 'none'; 
+		}
+	</script>
 </body>
 </html>
