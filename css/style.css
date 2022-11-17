@@ -761,12 +761,41 @@ footer .contact {
 }
 
 .contact .right-side .input-box {
-	height: 30px;
-	width: 100%;
-	margin: 7px 0;
+	position: relative;
 }
 
-.contact .right-side .input-box input,
+.contact .right-side .input-box input{
+	position: absolute;
+
+	border: solid 1.5px #fff;
+	border-radius: 1rem;
+	background: none;
+	padding: 1rem;
+	font-size: 1rem;
+	color: #f5f5f5;
+	transform: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact .right-side .input-box input label{
+	position: absolute;
+	left: 16px;
+	color: #c6c6c6;
+	pointer-events: none;
+	transform: translateY(1rem);
+	transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact .right-side .input-box input:focus {
+	outline: none;
+	border: 1.5px solid red;
+}
+
+.contact .right-side .input-box input:focus ~ label {
+	color: royalblue;
+	padding: 0 0.2em;
+	background-color: yellow;
+}
+
 .contact .right-side .input-box textarea {
 	height: 100%;
 	width: 100%;
