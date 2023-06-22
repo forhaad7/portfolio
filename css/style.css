@@ -223,6 +223,8 @@ nav ul li a:hover:after{
 .topnav .icon {
 	display: none;
 	padding: 2px;
+	font-size: 30px;
+	z-index: 20;
   }
 
 .social0 {
