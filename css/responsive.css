@@ -1,6 +1,6 @@
  /* responsive start ----------------------------------------------------------------------  */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
 
 
  /* ------------ hero section ----------*/
@@ -10,12 +10,8 @@
     top: 40%;
     
 }
-.wrapper .name_container {
-    top: 40%;
-}
-.wrapper .name_container img{
-  height: 50%;
-  opacity: .2;
+.wrapper {
+    display: none;
 }
 
  
@@ -26,6 +22,7 @@
 nav{
     padding: 10PX 70px;
     justify-content: space-around;
+    z-index: 100px;
 
 }
 .hero nav .logo{
@@ -61,7 +58,9 @@ nav ul li a:before{
 
 
  .myimgage{
-	display: none;
+	height: fit-content;
+    opacity: 1;
+    z-index: -1;
 }
 .content{
 	position: absolute;
@@ -327,7 +326,7 @@ h5{
 
  /* responsive start ----------------------------------------------------------------------  */
 
- @media screen and (max-width: 414px) {
+ @media screen and (max-width: 600px) {
 
 
 
@@ -336,11 +335,11 @@ h5{
     
    
     .circle_container {
-       top: 15%;
+       top: 50%;
        
    }
    .wrapper .name_container {
-       top: 15%;
+       top: 50%;
    }
    .wrapper .name_container img{
      height: 50%;
@@ -373,7 +372,6 @@ h5{
        text-align: center;
    }
    .nav ul li a{
-       font-size: 8px;
        color: #fff;
    }
    nav ul li a:before,
@@ -394,6 +392,8 @@ h5{
       
    .topnav ul {
     display: none;
+    font-size: 12px;
+    z-index: 5;
     }
    .topnav a.icon {
      position: absolute;
@@ -402,6 +402,7 @@ h5{
      color: #effcf5;
      font-weight: bold;
      display: block;
+     list-style: none;
 
    }
    .responsive ul {
@@ -410,11 +411,11 @@ h5{
      text-align: left;
    }
 
-  
-   
     .myimgage{
-       display: none;
-   }
+       height: 400px;
+       z-index: 1;
+       opacity: .3;
+    }
    .content{
        position: absolute;
        top: 65%;
@@ -424,6 +425,7 @@ h5{
    }
    .content_detail{
        animation: fadeinup 1s ease-in-out;
+       top: 60%;
 
    }
    .content_detail h3, h4{
