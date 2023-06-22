@@ -220,7 +220,10 @@ nav ul li a:hover:before,
 nav ul li a:hover:after{
 	width: 100%;
 }
-
+.topnav .icon {
+	display: none;
+	padding: 2px;
+  }
 
 .social0 {
 	position: fixed;

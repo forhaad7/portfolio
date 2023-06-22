@@ -401,6 +401,7 @@ h5{
      top: 10px;
      color: #effcf5;
      font-weight: bold;
+     display: block;
 
    }
    .responsive ul {
