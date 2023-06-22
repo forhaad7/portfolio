@@ -323,3 +323,321 @@ h5{
 
 }
       
+
+
+
+ /* responsive start ----------------------------------------------------------------------  */
+
+ @media screen and (max-width: 414px) {
+
+    /* ------------ hero section ----------*/
+    
+   
+    .circle_container {
+       top: 15%;
+       
+   }
+   .wrapper .name_container {
+       top: 15%;
+   }
+   .wrapper .name_container img{
+     height: 50%;
+     opacity: .4;
+   }
+   
+    
+    .hero{
+       background-image: linear-gradient(to right, rgb(1, 39, 7), rgb(1, 124, 20));
+   }
+   
+   nav{
+       padding: 10PX 70px;
+       justify-content: space-around;
+   
+   }
+   .hero nav .logo{
+       margin-top: 15px;
+       display: none;
+   }
+   
+   .logo a img{
+       height: 80px;
+   
+   }
+   nav ul li{
+       list-style-type: none;
+       display: block;
+       padding: 5px  0px;
+       text-align: center;
+   }
+   .nav ul li a{
+       font-size: 8px;
+       color: #fff;
+   }
+   nav ul li a:before,
+   nav ul li a:after{
+       height: 2px;
+   }	
+   nav ul li a:after{
+       left: 0;
+       bottom: -2px;
+   }
+   nav ul li a:before{
+       right: 0;
+       top: -2px;
+   }
+   
+   
+    .myimgage{
+       display: none;
+   }
+   .content{
+       position: absolute;
+       top: 65%;
+       left:4%;
+       transform: translateY(-65%);
+       z-index: 5;
+   }
+   .content_detail{
+       animation: fadeinup 1s ease-in-out;
+
+   }
+   .content_detail h3, h4{
+        font-size: 15px;
+        padding: 5px 0;
+   }
+
+   .content_detail h1{
+    font-size: 25px;
+}
+
+   .content h3 {
+       margin-bottom: 10px;
+       margin-right: 10px;
+   }
+   .content .content_detail a{
+    font-size: 15px;
+
+   }
+   
+   
+       /* ------------ about section ----------*/
+       .about{
+           
+           padding: 0;
+           padding-bottom: 40px;
+   
+       }  
+       
+       .about .main{
+               width: 95%;
+               flex-direction: column;
+               align-items: center;
+               justify-content: center;
+           }
+           .main .photo{
+               width: 100%;
+           }
+           .main .photo img{
+               filter: none;
+           }
+           .about-text{
+               width: 90%;
+           }
+           .about-text h2 {
+               color: var(--green);
+               font-size: 30px;
+           }
+           
+           .about-text h5 {
+               font-size: 15px;
+               margin-bottom: 15px;
+           }
+           
+           .about-text p {
+               font-size: 12px;
+               margin-bottom: 20px;
+           }
+           
+           button {
+               padding: 13px 20px;
+               border-radius: 30px;
+               font-size: 12px;
+           }
+       
+       
+       /* --------------- service section ------------*/
+       .Services{
+           width: 95%;
+       }
+       
+       .service .tittle{
+           align-items: center;
+       }
+       .title h2{
+           font-size: 30px;
+           margin: 22px auto;
+       }
+        .service .box{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+   
+        }
+       
+        .card{
+           height: 100%;
+           width: 90%;
+           padding: 5px 15px;
+           border-radius: 20px;
+           margin: 10px;
+       }
+       .card i{
+           font-size: 15px;
+           margin: 10px 0px;
+       }
+   h5{
+       font-size: 15px;
+       margin-bottom: 10px;
+   }
+   .pra p{
+       font-size: 12px;
+       margin-bottom: 15px;
+   }
+   
+   .card .button{
+       
+       padding: 8px 20px;
+       border-radius: 20px;
+   }
+       
+       /* --------------- skill section ------------*/
+       
+       .skillmy h2{
+        font-size: 30px;
+        font-weight: bold;
+       }
+
+       .skillmy h3{
+        font-size: 18px;
+       }
+       .skillmy .skill_main{
+           flex-direction: column;
+       }
+       
+       .skillmy .Skill-text {
+           width: 100%;
+           margin: 0;
+       }
+       
+       .skillmy .Skill-text h2 {
+           text-align: center;
+           font-size: 12px;
+       }
+       
+       .skillmy .Skill-text h3 {
+           text-align: center;
+           font-size: 12px;
+       }
+       
+       .skill_main {
+           width: 100%;
+            align-items: center;
+       }
+       
+       .skill-bars {
+           padding: 5px 10px;
+           background: rgb(229, 252, 236);
+       }
+       
+       .skillmy .skill_main figure {
+           width: 100%;
+           margin: 0;
+           margin-top: 20px
+   
+       }
+      
+       
+   
+   
+    /* --------------- footer section ------------*/
+   
+   
+   
+    footer .contact {
+       width: 100%;
+       padding: 10 0 px;
+       display: block;
+       box-shadow: none;
+       bottom: 0;
+    }
+   
+   .contact .left-side {
+       width: 100%;
+       padding: 15px 0;
+   
+   }
+   .contact .left-side .leftsidenew{
+       display: block;
+       padding: 2px;
+   }
+   
+   .contact .left-side .leftsidenew .details{
+       padding: 10px 2px;
+   }
+   .contact .left-side .details i {
+       font-size: 20px;
+       color: #fff;
+       margin-bottom: 0px;
+   }
+   
+   .contact .left-side .details .topic {
+       font-size: 15px;
+       font-weight: 600;
+   }
+   
+   .contact .left-side .details .text-one {
+       font-size: 12px;
+       color: #effcf5;
+   }
+   
+   
+   .contact .left-side:before {
+     display: none
+   }
+   
+   
+   .contact .right-side {
+       width: 95%;
+       margin: 5px;
+   }
+   
+   .contact .right-side .topic-text {
+       font-size: 25px;
+       padding: 0px 0 10px;
+       text-align: center;
+   }
+   .contact .right-side .button {
+       display: inline-block;
+       margin: 5px auto;
+       justify-content: center;
+       display: flex;
+       border-radius: 50px;
+   }
+   
+   .contact .manudown {
+       display: none;
+   }
+  
+   
+   .copy_right h5 {
+       color: var(--green);
+       font-weight: 400;
+       font-size: 10px;
+   }
+   
+   
+   
+   
+   }
+         
