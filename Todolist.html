@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
     <link rel="icon" type="image/x-icon" href="img/thamnail.ico">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <style>
         /* Include the padding and border in an element's total width and height */
 
@@ -197,6 +201,59 @@ input {
   color: rgb(49, 49, 49);
 }
 
+.gohome{
+  display: inline-block;
+  padding: 50px 0;
+  margin-left: 7%;
+}
+
+.gohome button{
+  border-radius: 5px;
+  padding: 10px 15px ;
+  border: 1px solid white;
+  background-color: #16965a;
+}
+
+.gohome button a{
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+	font-weight: bold;
+}
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  .container{
+    width: 95%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.todolist{
+  display: block;
+}
+.logo{
+  padding: 30px 20px;
+
+}
+
+ul li {
+  padding: 12px 8px 12px 30px;
+}
+
+.header {
+  padding: 30px 15px;
+}
+.gohome{
+  align-items: center;
+  margin: auto;
+}
+
+
+}
 
     </style>
 </head>
@@ -224,21 +281,32 @@ input {
     </div>
 
     <ul id="myUL">
-    <li>Clean Desktop</li>
-    <!-- <li class="checked">Report to Boss</li> -->
-    <li>Pray Namaz</li>
-    <li>Read Daily Newspaper</li>
-    <li>Call Family</li>
+    <li class="checked">All is well</li>
+    <li>Keep Smile</li>
     </ul>
   </div>
 
   <div class="logo">
-      <img src="/img/Green.png" alt=""  style="width: 150px;">
+      <img src="img/Green.png" alt=""  style="width: 150px;">
       <h2>Forhad Hossain</h2>
   </div>
 
 </div>
 
+<div class="social0">
+  <a class="tooltip " target="_blank" href="https://bd.linkedin.com/in/forhaad7"><span class="tooltiptext">Linkedin</span><i class="fab fa-linkedin-in"></i></a>
+
+  <a class="tooltip" target="_blank" href="https://www.behance.net/forhaad7"><span class="tooltiptext">Behance</span><i class="fab fa-behance"></i></a>
+
+  <a class="tooltip" target="_blank" href="https://www.instagram.com/forhaad7/"><span class="tooltiptext">Instagram</span><i class="fab fa-instagram"></i></a>
+
+  <a class="tooltip" target="_blank" href="https://twitter.com/forhaad7"><span class="tooltiptext">Twitter</span><i class="fab fa-twitter"></i></a>
+
+  <a class="tooltip" target="_blank" href="https://www.facebook.com/forhaad7/"><span class="tooltiptext">Facebook</span><i class="fab fa-facebook-f"></i></a> 
+
+</div>
+
+<div class="gohome"><button><a href="index.html">Go Home</a></button></div>
 
 
 
